@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Container,Box, Typography } from "@mui/material";
 import { useEffect } from "react";
 import AddHabitForm from "./components/add-habit-form";
@@ -6,10 +7,10 @@ import HabitStats from "./components/habit-stats";
 import useHabitStore from "./store/store";
 
 const App:React.FC = ()=>{
-const {fetchHabits} = useHabitStore();
+const {fetchhabits} = useHabitStore();
 
 useEffect(()=>{
-  fetchHabits();
+  fetchhabits();
 },[]);
 return (
       <Container maxWidth="md">
